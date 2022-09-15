@@ -37,7 +37,7 @@ const brand = ref('🏢 Fake Company Directory')
       @apply container mx-auto flex w-full items-center justify-between;
       .brand {
         &-title {
-          @apply text-2xl font-bold text-yellow-500;
+          @apply text-2xl font-bold text-red-500;
         }
       }
       .menu {
@@ -46,13 +46,13 @@ const brand = ref('🏢 Fake Company Directory')
           @apply py-2;
         }
         &-item {
-          @apply rounded-md px-4 py-2 hover:bg-yellow-500 hover:text-slate-900;
+          @apply rounded-md px-4 py-2 hover:bg-red-500 hover:text-slate-900;
         }
         &-login {
-          @apply rounded-md bg-green-500 px-4 py-2 text-red-100 hover:bg-green-700;
+          @apply rounded-md bg-green-500 px-4 py-2 text-red-100 hover:bg-blue-700;
         }
         &-logout {
-          @apply mx-2 rounded-md bg-red-500 px-4 py-2 text-red-100 hover:bg-red-700;
+          @apply mx-2 rounded-md bg-yellow-500 px-4 py-2 text-red-100 hover:bg-red-700;
         }
       }
     }
