@@ -1,5 +1,10 @@
+<script setup>
+    import { faker } from '@faker-js/faker'
+</script>
+
+
 <template>
-    <div>
-        <span class="bg-red-500">Please pick any of the 5 cards</span>
-    </div>
+    <img :src="faker.internet.avatar" alt="" srcset="" />
+        <span class=" ">{{ faker.name.fullName()}}</span>
+    
 </template>
