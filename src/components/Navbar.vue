@@ -1,8 +1,8 @@
 <script setup>
-import { ref } from 'vue'
-import { useAuth } from '@/composables/useAuth'
-const { isAuthenticated, logout, user } = useAuth()
-const brand = ref('🏢 Fake Company Directory')
+  import { ref } from 'vue'
+  import { useAuth } from '@/composables/useAuth'
+  const { isAuthenticated, logout, user } = useAuth()
+  const brand = ref('🏢 Fake Company Directory')
 </script>
 
 <template>

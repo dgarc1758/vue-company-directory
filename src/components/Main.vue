@@ -2,7 +2,7 @@
   import Mainsearch from './Mainsearch.vue'
   import MainCards from './MainCards.vue'
   import MainPagination from './MainPagination.vue'
-import MainPagination from './MainPagination.vue';
+  import MainPagination from './MainPagination.vue'
 </script>
 <template>
   <div class="wrapper">

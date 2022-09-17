@@ -18,9 +18,10 @@
 
 <template>
   <div>
-    <button class="action" :disabled="activePage === 1* @click=prevPage">Prev</button>
-    <button class="page" v-for="page in pages" :class="page === activePage ? 'active' : ''" @click="activePage"></button>
-     {{page}}</button>
+    <button class="action" :disabled="activePage === 1 * @click="prevPage">Prev</button>
+    <button class='page' v-for="page in pages" :class="page === activePage ? 'active' : ''" @click="activePage">
+     {{page}}
+    </button>
     <button class="action" :disabled="activePage === pages" @click="nextPage">Next</button>
   </div>
 </template>
