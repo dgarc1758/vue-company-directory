@@ -1,16 +1,11 @@
 {
-    "include":[
-        "src/**/*"
-    ],
+  "include": ["src/**/*"],
 
-    "compilerOptions":{
-      "baseUrl": ".",
-      "paths": {
-       "@/*":[
-        "./src/*"
-       ]
-      },
-      "gsx":"preserve"
-    }
-
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "gsx": "preserve"
+  }
 }
