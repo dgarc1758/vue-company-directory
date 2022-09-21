@@ -1,8 +1,8 @@
 <script setup>
-  import Mainsearch from './Mainsearch.vue'
-  import MainCards from './MainCards.vue'
-  import MainPagination from './MainPagination.vue'
-  import MainPagination from './MainPagination.vue'
+  import Mainsearch from '@/components/Mainsearch.vue'
+  import MainCards from '@/components/MainCards.vue'
+  import MainPagination from '@/components/MainPagination.vue'
+  
 </script>
 <template>
   <div class="wrapper">
