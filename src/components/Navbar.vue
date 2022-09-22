@@ -1,7 +1,9 @@
 <script setup>
   import { ref } from 'vue'
-  import { useAuth } from '@/composables/useAuth'
-  const { isAuthenticated, logout, user } = useAuth()
+import { useAuth } from '@/composables/useAuth'
+  
+const { isAuthenticated, logout, user } = useAuth()
+
   const brand = ref('🏢 Fake Company Directory')
 </script>
 
@@ -16,11 +18,11 @@
           Welcome back
           <strong
             ><i>{{ user.name }}</i></strong
-          >
+            >
         </p>
         <div v-if="isAuthenticated">
           <RouterLink :to="{ name: 'Settings' }" href="#" class="menu-item">Settings</RouterLink>
-          <button class="menu-logout" @click="logout">Logout</button>
+          <button href="#" class="menu-logout" @click="logout">Logout</button>
         </div>
         <div v-else>
           <RouterLink :to="{ name: 'Login' }" href="#" class="menu-login">Login</RouterLink>
