@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-
+import router from '@/router'
 const dbUsers = [
   {
     username: 'admin',
@@ -21,15 +21,15 @@ const dbUsers = [
 const isAuthenticated = ref(false)
 const user = ref({})
 
+
 export const useAuth = () =>
 {
   const login = (username, password) =>
   {
-    console.log(username)
-    const user = dbUsers.find((u) => u.username === username && u.password === password)
-    if (user)
+    const dbUser = dbUsers.find((u) => u.username === username && u.password === password)
+    if (dbUser)
      {
-            const{name, role, email, username} = user
+            const{name, role, email, username} = dbUser
             isAuthenticated.value = true
            user.value = { name, role, email, username }
            return true
@@ -39,7 +39,8 @@ export const useAuth = () =>
   
   const logout = () => {
     isAuthenticated.value = false
-    user.value={}
+    user.value = {}
+    router.push({name: 'Home'})
   }
     return {isAuthenticated, user,logout, login}
 }

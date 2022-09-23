@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { useAuth } from '@/composables/useAuth'
 
+
 const { isAuthenticated } = useAuth()
 
 import MainPage from '@/components/MainPage.vue'
@@ -25,5 +26,6 @@ router.beforeEach((to) => {
     return { name: 'Login', query: { redirect: to.fullPath } }
   }
 })
+
 
 export default router
