@@ -1,13 +1,13 @@
 <script setup>
   import { ref } from 'vue'
-  import { useRouter, useRoute } from 'vue-router'
+  import { useRouter, useRoute} from 'vue-router'
 
   import { useAuth } from '@/composables/useAuth'
-const { login, logout } = useAuth()
-  
- const router = useRouter()
- const route = useRoute()
-  
+  const { login, logout } = useAuth()
+
+  const router = useRouter()
+  const route = useRoute()
+
   const username = ref('')
   const password = ref('')
 
