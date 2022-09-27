@@ -5,8 +5,8 @@
   import { useAuth } from '@/composables/useAuth'
 const { login, logout } = useAuth()
   
-  const router = useRouter()
-const route = useRoute()
+ const router = useRouter()
+ const route = useRoute()
   
   const username = ref('')
   const password = ref('')
